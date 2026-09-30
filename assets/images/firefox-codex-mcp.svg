@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Browser und MCP-Verbindung</title>
+  <desc id="desc">Symbolisches Browserfenster mit verbundenem Terminal auf einem dunklen technischen Raster.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#82bb65" stop-opacity=".17"/><stop offset="1" stop-color="#82bb65" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="85" y1="58" x2="608" y2="348" gradientUnits="userSpaceOnUse"><stop stop-color="#222c25"/><stop offset="1" stop-color="#141b17"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#b7ec88" stroke-opacity=".04"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dy="16" stdDeviation="20" flood-color="#030805" flood-opacity=".45"/></filter>
+  </defs>
+  <path fill="#121814" d="M0 0h800v460H0z"/>
+  <path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <ellipse cx="455" cy="205" rx="355" ry="250" fill="url(#glow)"/>
+  <path d="M49 114V77a16 16 0 0 1 16-16h37M698 389h37a16 16 0 0 0 16-16v-37" stroke="#95b889" stroke-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="87" y="63" width="541" height="300" rx="15" fill="url(#panel)" stroke="#4b614d"/>
+    <path d="M88 109h539" stroke="#3a493e"/>
+    <circle cx="109" cy="86" r="4" fill="#657567"/><circle cx="124" cy="86" r="4" fill="#657567"/><circle cx="139" cy="86" r="4" fill="#657567"/>
+    <rect x="191" y="76" width="284" height="21" rx="6" fill="#111713" stroke="#354438"/>
+    <path d="m203 86 4-4 4 4-4 4z" fill="#b7ec88"/>
+    <path d="M223 86h97" stroke="#748b75" stroke-width="3" stroke-linecap="round"/>
+    <path d="m587 81 5 5-5 5m-13-10-5 5 5 5" stroke="#849b84" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="110" y="131" width="128" height="208" rx="8" fill="#131a16" stroke="#2c3a30"/>
+    <rect x="123" y="145" width="30" height="30" rx="8" fill="#b7ec88" fill-opacity=".14"/>
+    <path d="m132 160 6-6 6 6-6 6z" stroke="#b7ec88" stroke-width="1.5"/>
+    <path d="M166 155h43m-43 10h29" stroke="#536b56" stroke-width="4" stroke-linecap="round"/>
+    <rect x="122" y="192" width="104" height="30" rx="5" fill="#b7ec88" fill-opacity=".12"/>
+    <path d="M137 207h9m10 0h47" stroke="#b7ec88" stroke-width="3" stroke-linecap="round"/>
+    <path d="M137 244h9m10 0h47m-66 34h9m10 0h31m-50 34h9m10 0h40" stroke="#516555" stroke-width="3" stroke-linecap="round"/>
+    <text x="264" y="155" fill="#c7d6c5" font-family="ui-monospace, monospace" font-size="14" letter-spacing="2">BROWSER CONTEXT</text>
+    <rect x="264" y="174" width="338" height="92" rx="9" fill="#202f25" stroke="#3c5642"/>
+    <path d="M286 199h147m-147 15h218m-218 15h173" stroke="#65866b" stroke-width="5" stroke-linecap="round"/>
+    <rect x="264" y="281" width="92" height="57" rx="7" fill="#1b281f" stroke="#35483b"/>
+    <path d="m297 309 8-8m-8 8 8 8m15-16 8 8-8 8" stroke="#9ac88d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M373 308h18a17 17 0 0 1 17 17v49a17 17 0 0 0 17 17h27" stroke="#b7ec88" stroke-width="2" stroke-dasharray="5 7"/>
+  <circle cx="373" cy="308" r="5" fill="#b7ec88"/>
+  <g filter="url(#shadow)">
+    <rect x="428" y="249" width="283" height="155" rx="13" fill="#101813" stroke="#83ad76"/>
+    <path d="M429 288h281" stroke="#354c38"/>
+    <path d="m446 265 6 5-6 5m13 0h9" stroke="#b7ec88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="484" y="275" fill="#ccdcc7" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1">MCP / CONNECTED</text>
+    <circle cx="686" cy="269" r="4" fill="#b7ec88"/>
+    <path d="m449 310 5 4-5 4" stroke="#b7ec88" stroke-width="2" stroke-linecap="round"/>
+    <text x="467" y="319" fill="#cdd9c8" font-family="ui-monospace, monospace" font-size="14">read_context()</text>
+    <path d="M469 338h142m-142 14h95" stroke="#55765b" stroke-width="4" stroke-linecap="round"/>
+    <path d="m449 372 4 4 8-9" stroke="#b7ec88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M470 373h104" stroke="#88a77f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M589 368v10" stroke="#b7ec88" stroke-width="5"/>
+  </g>
+</svg>

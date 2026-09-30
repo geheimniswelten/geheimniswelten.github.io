@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Andockbare Desktop-Panels</title>
+  <desc id="desc">Symbolischer modularer Desktop mit angedockten Fenstern und einem schwebenden Werkzeug-Panel in rosigen Akzenten.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#ce889c" stop-opacity=".15"/><stop offset="1" stop-color="#ce889c" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="81" y1="65" x2="701" y2="391" gradientUnits="userSpaceOnUse"><stop stop-color="#30272b"/><stop offset="1" stop-color="#211b1e"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#eab2c2" stroke-opacity=".045"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="-5" dy="16" stdDeviation="17" flood-color="#0c0508" flood-opacity=".55"/></filter>
+  </defs>
+  <path fill="#191619" d="M0 0h800v460H0z"/><path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <ellipse cx="420" cy="224" rx="374" ry="235" fill="url(#glow)"/>
+  <path d="M46 135V75a15 15 0 0 1 15-15h48m584 350h48a15 15 0 0 0 15-15v-61" stroke="#cd98a8" stroke-opacity=".21"/>
+  <g filter="url(#shadow)">
+    <rect x="79" y="72" width="615" height="316" rx="13" fill="url(#panel)" stroke="#76515e"/>
+    <path d="M80 114h613" stroke="#65454f"/>
+    <rect x="99" y="87" width="14" height="13" rx="2" stroke="#bd8c9c"/><path d="M104 88v11m0-6h8" stroke="#bd8c9c"/>
+    <text x="126" y="99" fill="#ddbec8" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.5">WORKSPACE</text>
+    <path d="M616 92h12m15-5v10h10V87zm28 0 9 9m0-9-9 9" stroke="#a57b89" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="93" y="129" width="138" height="244" rx="6" fill="#231d22" stroke="#624653"/>
+    <path d="M94 162h136" stroke="#58404a"/>
+    <text x="106" y="151" fill="#bd9ba6" font-family="ui-monospace, monospace" font-size="13">EXPLORER</text>
+    <path d="M110 181h9m9 0h73m-91 23h9m9 0h51m-68 23h8m9 0h64m-81 23h8m9 0h51m-68 23h8m9 0h73" stroke="#785763" stroke-width="3" stroke-linecap="round"/>
+    <rect x="105" y="297" width="113" height="27" rx="4" fill="#a76e82" fill-opacity=".2"/>
+    <path d="M118 311h70m-70 35h83" stroke="#a37887" stroke-width="3" stroke-linecap="round"/>
+    <rect x="241" y="129" width="316" height="176" rx="6" fill="#201b20" stroke="#765161"/>
+    <path d="M242 162h314" stroke="#674552"/>
+    <path d="M252 145h67" stroke="#cca1b0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M334 130v31m14-16h57" stroke="#6e4c59" stroke-width="2" stroke-linecap="round"/>
+    <path d="M259 182h12m-12 20h12m-12 20h12m-12 20h12m-12 20h12m-12 20h12" stroke="#654b58" stroke-width="3" stroke-linecap="round"/>
+    <path d="M289 182h89m-73 20h161m-161 20h120m-120 20h71m-97 20h90m-90 20h29" stroke="#a27288" stroke-width="4" stroke-linecap="round"/>
+    <path d="M397 182h79m-100 60h70" stroke="#cfa3b1" stroke-width="4" stroke-linecap="round"/>
+    <rect x="568" y="129" width="112" height="176" rx="6" fill="#b2788c" fill-opacity=".06" stroke="#b5879a" stroke-dasharray="5 5"/>
+    <path d="M605 206h38m-19-19v38" stroke="#ad7e90" stroke-width="1.5"/>
+    <rect x="610" y="192" width="28" height="28" rx="5" fill="#392832" stroke="#a47789"/>
+    <path d="M614 196h20v20h-20z" stroke="#b88b9c"/><path d="M626 197v18" stroke="#b88b9c"/>
+    <rect x="241" y="316" width="439" height="57" rx="6" fill="#1b171c" stroke="#59404b"/>
+    <path d="m255 330 5 4-5 4m14 0h8" stroke="#d5a5b7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M289 334h90m-123 20h166m15 0h42" stroke="#755463" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="482" y="232" width="244" height="158" rx="11" fill="#392832" stroke="#d0a0b4"/>
+    <path d="M483 271h242" stroke="#9b6c82"/>
+    <circle cx="500" cy="249" r="1.5" fill="#d0a0b4"/><circle cx="506" cy="249" r="1.5" fill="#d0a0b4"/><circle cx="500" cy="255" r="1.5" fill="#d0a0b4"/><circle cx="506" cy="255" r="1.5" fill="#d0a0b4"/>
+    <text x="519" y="257" fill="#f0cede" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1">PROPERTIES</text>
+    <path d="m701 248 8 8m0-8-8 8" stroke="#c899ad" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M501 293h62m-62 28h46m-46 28h54" stroke="#b78a9f" stroke-width="4" stroke-linecap="round"/>
+    <rect x="589" y="283" width="116" height="21" rx="4" fill="#221b24" stroke="#8a6279"/>
+    <rect x="589" y="311" width="116" height="21" rx="4" fill="#221b24" stroke="#8a6279"/>
+    <path d="M601 294h70m-70 28h51" stroke="#896b81" stroke-width="3" stroke-linecap="round"/>
+    <rect x="589" y="340" width="35" height="19" rx="9.5" fill="#d4a1b7"/><circle cx="614" cy="349.5" r="6.5" fill="#fae9f1"/>
+    <path d="M646 350h54" stroke="#7d5b70" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

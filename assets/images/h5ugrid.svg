@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Hierarchische Datentabelle</title>
+  <desc id="desc">Symbolische Baum- und Tabellendarstellung mit einer hervorgehobenen mintgrünen Zeile.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#61c99d" stop-opacity=".15"/><stop offset="1" stop-color="#61c99d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="90" y1="69" x2="700" y2="382" gradientUnits="userSpaceOnUse"><stop stop-color="#25342d"/><stop offset="1" stop-color="#16221c"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#9af0c5" stroke-opacity=".045"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dy="17" stdDeviation="20" flood-color="#030805" flood-opacity=".5"/></filter>
+  </defs>
+  <path fill="#121814" d="M0 0h800v460H0z"/><path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <ellipse cx="406" cy="220" rx="374" ry="235" fill="url(#glow)"/>
+  <path d="M50 133V83a20 20 0 0 1 20-20h40m580 331h40a20 20 0 0 0 20-20v-50" stroke="#81b599" stroke-opacity=".25"/>
+  <g filter="url(#shadow)">
+    <rect x="80" y="73" width="640" height="315" rx="14" fill="url(#panel)" stroke="#486652"/>
+    <path d="M81 123h638" stroke="#3b5245"/>
+    <rect x="100" y="90" width="19" height="17" rx="3" fill="#9aebc0" fill-opacity=".18" stroke="#8acaa6"/>
+    <path d="M106 91v15m-6-9h18" stroke="#8acaa6"/>
+    <text x="133" y="104" fill="#d7e8da" font-family="ui-monospace, monospace" font-size="14" letter-spacing="1.5">TREE / GRID</text>
+    <rect x="505" y="87" width="132" height="26" rx="6" fill="#121e17" stroke="#375240"/>
+    <circle cx="520" cy="99" r="4" stroke="#6d8e76" stroke-width="1.5"/><path d="m523 102 4 4" stroke="#6d8e76" stroke-width="1.5"/>
+    <path d="M538 100h78" stroke="#4d715b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M659 96h35m-35 7h35m-28-12v10m20-3v10" stroke="#7eaa8f" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="113" y="151" fill="#91ae9a" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1">NAME</text>
+    <text x="383" y="151" fill="#91ae9a" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1">TYPE</text>
+    <text x="508" y="151" fill="#91ae9a" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1">STATUS</text>
+    <text x="624" y="151" fill="#91ae9a" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1">VALUE</text>
+    <path d="M81 165h638M81 208h638M81 251h638M81 294h638M81 337h638" stroke="#324e3d"/>
+    <path d="M356 124v263m129-263v263m117-263v263" stroke="#324e3d"/>
+    <path d="m111 184 5 5 5-5" stroke="#9fe4b9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M136 181h9l4 4h13v13h-26z" fill="#4e775e" stroke="#8bbd9b"/>
+    <text x="177" y="194" fill="#d2e5d6" font-family="ui-monospace, monospace" font-size="14">workspace</text>
+    <path d="M116 203v68h23m-23-44h23" stroke="#52755e" stroke-width="1.5"/>
+    <rect x="96" y="212" width="608" height="36" rx="5" fill="#9aebc0" fill-opacity=".16" stroke="#8fd6ad" stroke-opacity=".7"/>
+    <path d="M99 218v24" stroke="#adf3c9" stroke-width="3" stroke-linecap="round"/>
+    <rect x="144" y="221" width="13" height="17" rx="2" stroke="#b0f1cd"/>
+    <text x="177" y="235" fill="#ccffe0" font-family="ui-monospace, monospace" font-size="14">selection</text>
+    <path d="M386 230h57" stroke="#a8dcb9" stroke-width="4" stroke-linecap="round"/>
+    <rect x="508" y="222" width="62" height="16" rx="8" fill="#aaf4cc" fill-opacity=".25"/><circle cx="519" cy="230" r="3" fill="#bdf7d4"/><path d="M529 230h30" stroke="#b0eac7" stroke-width="3" stroke-linecap="round"/>
+    <path d="M626 230h49" stroke="#a9e6bc" stroke-width="4" stroke-linecap="round"/>
+    <rect x="144" y="264" width="13" height="17" rx="2" stroke="#6c9378"/>
+    <path d="M178 274h117m91 0h45m195 0h31M178 316h92m116 0h57m183 0h49M178 359h104m104 0h45m195 0h31" stroke="#5c7e66" stroke-width="4" stroke-linecap="round"/>
+    <path d="M386 189h45m195 0h49" stroke="#5c7e66" stroke-width="4" stroke-linecap="round"/>
+    <path d="m112 311 5 5-5 5m0 33 5 5-5 5" stroke="#89b397" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M138 309h9l4 4h13v12h-26zM138 352h9l4 4h13v12h-26z" fill="#3b5a47" stroke="#70967b"/>
+    <rect x="508" y="181" width="62" height="16" rx="8" fill="#53705b" fill-opacity=".5"/>
+    <rect x="508" y="265" width="62" height="16" rx="8" fill="#53705b" fill-opacity=".5"/>
+    <rect x="508" y="308" width="62" height="16" rx="8" fill="#53705b" fill-opacity=".5"/>
+    <rect x="508" y="351" width="62" height="16" rx="8" fill="#53705b" fill-opacity=".5"/>
+  </g>
+  <rect x="306" y="406" width="188" height="5" rx="2.5" fill="#789d83" fill-opacity=".35"/>
+</svg>
