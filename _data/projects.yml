@@ -1,0 +1,50 @@
+- id: projekte
+  title: Die größeren Projekte
+  eyebrow: 01 / AUSGEWÄHLTE REPOS
+  caption: Von der Idee zum Werkzeug.
+  items:
+    - id: firefox-codex-mcp
+      name: firefox-codex-mcp
+      url: https://github.com/geheimniswelten/firefox-codex-mcp
+      image: /assets/images/firefox-codex-mcp.svg
+      image_label: BROWSER × MCP
+      description: Verbindet Firefox mit Codex und anderen MCP-Clients. Tabs, Fenster und Seiteninhalte direkt aus dem KI-Workflow nutzen.
+      tags: [JavaScript, MCP]
+    - id: h5ugrid
+      name: h5uGrid
+      url: https://github.com/geheimniswelten/h5uGrid
+      image: /assets/images/h5ugrid.svg
+      image_label: GRID × TREE
+      description: Grid und Tree für Delphi und Lazarus. Ein erweiterbarer Prototyp mit gemeinsamem Datenkern für VCL, FMX und LCL.
+      tags: [Delphi / Lazarus, VCL / FMX / LCL]
+    - id: openaiusagedashboard
+      name: OpenAIUsageDashboard
+      url: https://github.com/geheimniswelten/OpenAIUsageDashboard
+      image: /assets/images/openai-usage-dashboard.svg
+      image_label: USAGE × INSIGHTS
+      description: OpenAI-API-Kosten, Tokenverbrauch und Codex-Limits im Blick. Ein natives Dashboard für Windows und Android.
+      tags: [Codex, Dashboard]
+- id: demos
+  title: Demos & kleine Helfer
+  eyebrow: 02 / KLEIN, ABER NÜTZLICH
+  caption: Ausprobieren. Nachschauen. Weiterbauen.
+  compact: true
+  items:
+    - id: fmxstyleoverview
+      name: FMXStyleOverview
+      url: https://github.com/geheimniswelten/FMXStyleOverview
+      image: /assets/images/fmx-style-overview.svg
+      description: Style-Ressourcen in Delphi-FMX-Styles übersichtlich durchstöbern und vergleichen.
+      tags: [Delphi, FireMonkey]
+    - id: ospathsdemo
+      name: OSPathsDemo
+      url: https://github.com/geheimniswelten/OSPathsDemo
+      image: /assets/images/os-paths-demo.svg
+      description: Wo gehören Programm- und Nutzerdaten hin? Systempfade unter Windows und Android erkunden.
+      tags: [Delphi, Systempfade]
+    - id: dockingdemos
+      name: DockingDemos
+      url: https://github.com/geheimniswelten/DockingDemos
+      image: /assets/images/docking-demos.svg
+      description: "Docking und MDI in Delphi: Beispiele mit VCL-Bordmitteln, DevExpress und Walibeiro."
+      tags: [Delphi, Docking]

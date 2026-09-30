@@ -1,102 +1,43 @@
-<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="dark">
-    <meta name="theme-color" content="#101412">
-    <meta name="description" content="Projekte, kleine Helfer und Experimente von geheimniswelten – von Delphi-Komponenten bis zu Tools für den Entwickleralltag.">
-    <title>Projekte & Demos · geheimniswelten</title>
-    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css">
-    <script src="assets/projects.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#projekte">Zu den Projekten</a>
-    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
-      <symbol id="icon-link" viewBox="0 0 24 24"><path d="m10 13 4-4m-6 7-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 0 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0" transform="translate(1 1)"/></symbol>
-      <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.55.1.76-.24.76-.54v-2.07c-3.1.67-3.76-1.31-3.76-1.31-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.07-.68.07-.68 1.12.08 1.71 1.14 1.71 1.14.99 1.7 2.59 1.21 3.22.92.1-.72.39-1.21.71-1.49-2.48-.28-5.08-1.24-5.08-5.52 0-1.22.43-2.22 1.14-3-.11-.28-.49-1.42.11-2.96 0 0 .93-.3 3.05 1.14A10.6 10.6 0 0 1 12 6.13c.94 0 1.88.13 2.77.38 2.12-1.44 3.05-1.14 3.05-1.14.6 1.54.22 2.68.11 2.96.71.78 1.14 1.78 1.14 3.01 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.07v3.04c0 .3.2.65.76.54A11.1 11.1 0 0 0 12 .9Z"/></symbol>
-    </svg>
+---
+layout: default
+title: Projekte & Demos
+project_overview: true
+---
+<div class="projects-page" id="portfolio">
+  <a class="skip-link" href="#projekte">Zu den Projekten</a>
+  {% include project-icons.html %}
 
-    <header class="site-header wrap">
-      <a class="brand" href="./" aria-label="geheimniswelten – Startseite"><span class="brand-mark" aria-hidden="true">g<span>.</span></span>geheimniswelten<span class="brand-dot">.</span></a>
-      <nav aria-label="Hauptnavigation">
-        <a href="#projekte">Projekte</a>
-        <a href="#demos">Demos</a>
-        <a class="github-nav" href="https://github.com/geheimniswelten" aria-label="GitHub-Profil von geheimniswelten"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg><span>GitHub</span><svg class="icon small" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-      </nav>
-    </header>
+  <nav class="portfolio-nav" aria-label="Projektnavigation">
+    {% for group in site.data.projects %}<a href="#{{ group.id | escape }}">{% if group.compact %}Demos{% else %}Projekte{% endif %}</a>{% endfor %}
+    <a class="github-nav" href="https://github.com/geheimniswelten" aria-label="GitHub-Profil von geheimniswelten"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>GitHub<svg class="icon small" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+  </nav>
 
-    <main class="wrap">
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="intro-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CODE. NEUGIER. KAFFEE.</p>
-          <h1 id="intro-title">Kleine Ideen.<br>Eigene <span>Welten.</span></h1>
-          <p class="intro-description">Meine Projekte, nützliche Helfer und kleine Experimente.<br class="desktop-break"> Gebaut aus Neugier. Geteilt zum Entdecken und Weiterdenken.</p>
+  <section class="intro" aria-labelledby="intro-title">
+    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CODE. NEUGIER. KAFFEE.</p>
+    <h1 id="intro-title">Kleine Ideen.<br>Eigene <span>Welten.</span></h1>
+    <p class="intro-description">Meine Projekte, nützliche Helfer und kleine Experimente.<br>Gebaut aus Neugier. Geteilt zum Entdecken und Weiterdenken.</p>
+  </section>
+
+  {% for group in site.data.projects %}
+    <section class="project-group" id="{{ group.id | escape }}" aria-labelledby="{{ group.id | escape }}-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-index">{{ group.eyebrow | escape }}</p>
+          <h2 id="{{ group.id | escape }}-title">{{ group.title | escape }}<span class="count">{% if group.items.size < 10 %}0{% endif %}{{ group.items.size }}</span></h2>
         </div>
-        <div class="intro-note" aria-hidden="true"><span class="note-bracket">{</span><span>ein paar Zeilen Code,<br>ein paar neue Möglichkeiten<span class="note-cursor">_</span></span><span class="note-bracket">}</span></div>
-      </section>
+        <span class="section-caption">{{ group.caption | escape }}</span>
+      </div>
+      <div class="project-grid">
+        {% for project in group.items %}
+          {% include project-card.html project=project compact=group.compact first=forloop.first %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
 
-      <section class="project-section" id="projekte" aria-labelledby="projects-title">
-        <div class="section-heading"><div><p class="section-index">01 / AUSGEWÄHLTE REPOS</p><h2 id="projects-title">Die größeren Projekte<span class="count">03</span></h2></div><span class="section-caption">Von der Idee zum Werkzeug.</span></div>
-        <div class="project-grid">
-          <article class="project-card" id="firefox-codex-mcp" data-project="firefox-codex-mcp">
-            <a class="project-link" href="https://github.com/geheimniswelten/firefox-codex-mcp">
-              <div class="project-image image-firefox"><img src="assets/images/firefox-codex-mcp.svg" alt="" width="800" height="460" fetchpriority="high"><span class="image-label">BROWSER × MCP</span><span class="selection-label">Ausgewählt</span></div>
-              <div class="card-body"><div class="card-title"><h3>firefox-codex-mcp</h3><span class="repo-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span></div><p>Verbindet Firefox mit Codex und anderen MCP-Clients. Tabs, Fenster und Seiteninhalte direkt aus dem KI-Workflow nutzen.</p></div>
-            </a>
-            <div class="card-meta"><ul class="tags" aria-label="Technologien"><li>JavaScript</li><li>MCP</li></ul><a class="permalink" href="#firefox-codex-mcp" aria-label="Direktlink zur Kachel firefox-codex-mcp" title="Direktlink zur Kachel"><svg class="icon" aria-hidden="true"><use href="#icon-link"/></svg></a></div>
-          </article>
-
-          <article class="project-card" id="h5ugrid" data-project="h5uGrid">
-            <a class="project-link" href="https://github.com/geheimniswelten/h5uGrid">
-              <div class="project-image image-grid"><img src="assets/images/h5ugrid.svg" alt="" width="800" height="460"><span class="image-label">GRID × TREE</span><span class="selection-label">Ausgewählt</span></div>
-              <div class="card-body"><div class="card-title"><h3>h5uGrid</h3><span class="repo-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span></div><p>Grid und Tree für Delphi und Lazarus. Ein erweiterbarer Prototyp mit gemeinsamem Datenkern für VCL, FMX und LCL.</p></div>
-            </a>
-            <div class="card-meta"><ul class="tags" aria-label="Technologien"><li>Delphi / Lazarus</li><li>VCL / FMX / LCL</li></ul><a class="permalink" href="#h5ugrid" aria-label="Direktlink zur Kachel h5uGrid" title="Direktlink zur Kachel"><svg class="icon" aria-hidden="true"><use href="#icon-link"/></svg></a></div>
-          </article>
-
-          <article class="project-card" id="openaiusagedashboard" data-project="OpenAIUsageDashboard">
-            <a class="project-link" href="https://github.com/geheimniswelten/OpenAIUsageDashboard">
-              <div class="project-image image-usage"><img src="assets/images/openai-usage-dashboard.svg" alt="" width="800" height="460"><span class="image-label">USAGE × INSIGHTS</span><span class="selection-label">Ausgewählt</span></div>
-              <div class="card-body"><div class="card-title"><h3>OpenAI<wbr>Usage<wbr>Dashboard</h3><span class="repo-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span></div><p>OpenAI-API-Kosten, Tokenverbrauch und Codex-Limits im Blick. Ein natives Dashboard für Windows und Android.</p></div>
-            </a>
-            <div class="card-meta"><ul class="tags" aria-label="Themen"><li>Codex</li><li>Dashboard</li></ul><a class="permalink" href="#openaiusagedashboard" aria-label="Direktlink zur Kachel OpenAIUsageDashboard" title="Direktlink zur Kachel"><svg class="icon" aria-hidden="true"><use href="#icon-link"/></svg></a></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="demo-section" id="demos" aria-labelledby="demos-title">
-        <div class="section-heading"><div><p class="section-index">02 / KLEIN, ABER NÜTZLICH</p><h2 id="demos-title">Demos & kleine Helfer<span class="count">03</span></h2></div><span class="section-caption">Ausprobieren. Nachschauen. Weiterbauen.</span></div>
-        <div class="project-grid demo-grid">
-          <article class="project-card demo-card" id="fmxstyleoverview" data-project="FMXStyleOverview">
-            <a class="project-link" href="https://github.com/geheimniswelten/FMXStyleOverview">
-              <div class="project-image image-styles"><img src="assets/images/fmx-style-overview.svg" alt="" width="800" height="460" loading="lazy"><span class="selection-label">Ausgewählt</span></div>
-              <div class="card-body"><div class="card-title"><h3>FMXStyleOverview</h3><span class="repo-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span></div><p>Style-Ressourcen in Delphi-FMX-Styles übersichtlich durchstöbern und vergleichen.</p></div>
-            </a>
-            <div class="card-meta"><ul class="tags" aria-label="Technologien"><li>Delphi</li><li>FireMonkey</li></ul><a class="permalink" href="#fmxstyleoverview" aria-label="Direktlink zur Kachel FMXStyleOverview" title="Direktlink zur Kachel"><svg class="icon" aria-hidden="true"><use href="#icon-link"/></svg></a></div>
-          </article>
-          <article class="project-card demo-card" id="ospathsdemo" data-project="OSPathsDemo">
-            <a class="project-link" href="https://github.com/geheimniswelten/OSPathsDemo">
-              <div class="project-image image-paths"><img src="assets/images/os-paths-demo.svg" alt="" width="800" height="460" loading="lazy"><span class="selection-label">Ausgewählt</span></div>
-              <div class="card-body"><div class="card-title"><h3>OSPathsDemo</h3><span class="repo-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span></div><p>Wo gehören Programm- und Nutzerdaten hin? Systempfade unter Windows und Android erkunden.</p></div>
-            </a>
-            <div class="card-meta"><ul class="tags" aria-label="Themen"><li>Delphi</li><li>Systempfade</li></ul><a class="permalink" href="#ospathsdemo" aria-label="Direktlink zur Kachel OSPathsDemo" title="Direktlink zur Kachel"><svg class="icon" aria-hidden="true"><use href="#icon-link"/></svg></a></div>
-          </article>
-          <article class="project-card demo-card" id="dockingdemos" data-project="DockingDemos">
-            <a class="project-link" href="https://github.com/geheimniswelten/DockingDemos">
-              <div class="project-image image-docking"><img src="assets/images/docking-demos.svg" alt="" width="800" height="460" loading="lazy"><span class="selection-label">Ausgewählt</span></div>
-              <div class="card-body"><div class="card-title"><h3>DockingDemos</h3><span class="repo-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span></div><p>Docking und MDI in Delphi: Beispiele mit VCL-Bordmitteln, DevExpress und Walibeiro.</p></div>
-            </a>
-            <div class="card-meta"><ul class="tags" aria-label="Themen"><li>Delphi</li><li>Docking</li></ul><a class="permalink" href="#dockingdemos" aria-label="Direktlink zur Kachel DockingDemos" title="Direktlink zur Kachel"><svg class="icon" aria-hidden="true"><use href="#icon-link"/></svg></a></div>
-          </article>
-        </div>
-      </section>
-
-      <aside class="explore"><div><span class="explore-symbol" aria-hidden="true">↳</span><p>Neugierig geworden?<span>Hier gibt’s noch mehr zu entdecken.</span></p></div><a href="https://github.com/geheimniswelten?tab=repositories">Alle Repositories auf GitHub<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></aside>
-      <p id="selection-status" class="sr-only" role="status" aria-live="polite"></p>
-    </main>
-    <footer class="site-footer wrap"><span>geheimniswelten<span class="brand-dot">.</span> <span class="footer-divider">/</span> Mit Neugier gebaut.</span><a href="https://github.com/geheimniswelten"><svg class="icon small" aria-hidden="true"><use href="#icon-github"/></svg>Auf GitHub zuhause<svg class="icon small" aria-hidden="true"><use href="#icon-arrow"/></svg></a></footer>
-  </body>
-</html>
+  <aside class="explore">
+    <p>Neugierig geworden?<span>Hier gibt’s noch mehr zu entdecken.</span></p>
+    <a href="https://github.com/geheimniswelten?tab=repositories">Alle Repositories auf GitHub<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+  </aside>
+  <p id="selection-status" class="sr-only" role="status" aria-live="polite"></p>
+</div>

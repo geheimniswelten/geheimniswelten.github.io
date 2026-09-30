@@ -1,3 +1,19 @@
-theme: hacker
+theme: jekyll-theme-hacker
 title: Geheimniswelten-Projektchen
-description: the List
+description: Projekte, kleine Helfer und Experimente von geheimniswelten.
+lang: de
+url: https://geheimniswelten.github.io
+baseurl: ""
+show_downloads: false
+
+# Ergänzende Kartenfarben; Seitenrahmen und Schrift stammen aus dem Theme.
+project_style:
+  accent: "#b5e853"
+  card_background: "rgba(127, 127, 127, 0.06)"
+  card_border: "rgba(127, 127, 127, 0.28)"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

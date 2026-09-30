@@ -1,0 +1,12 @@
+<link rel="icon" href="{{ '/assets/icon.svg' | relative_url }}" type="image/svg+xml">
+{% if page.project_overview %}
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}?v={{ site.github.build_revision }}">
+  <style>
+    .projects-page {
+      --project-accent: {{ site.project_style.accent | default: 'currentColor' }};
+      --project-card-background: {{ site.project_style.card_background | default: 'rgba(127, 127, 127, 0.06)' }};
+      --project-border: {{ site.project_style.card_border | default: 'rgba(127, 127, 127, 0.28)' }};
+    }
+  </style>
+  <script src="{{ '/assets/projects.js' | relative_url }}?v={{ site.github.build_revision }}" defer></script>
+{% endif %}

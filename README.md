@@ -1,19 +1,52 @@
 # geheimniswelten.github.io
 
-Persönliche Projektübersicht mit drei großen Projektkarten und drei kompakteren Demo-Karten. Die Seite besteht aus statischem HTML, CSS und einem kleinen Skript für die URL-Auswahl. Kein Build und keine externen Bibliotheken erforderlich.
+Jekyll-Projektübersicht für GitHub Pages mit drei großen Projektkarten und drei kompakteren Demo-Karten. Das konfigurierte Theme liefert Seitenrahmen und Typografie; die Projektkarten ergänzen das Theme. Die sechs Vorschaubilder sind symbolische Illustrationen, keine App-Screenshots.
 
-## Lokal ansehen
+## Theme und Farben
 
-`index.html` im Browser öffnen oder dieses Verzeichnis mit einem statischen Webserver ausliefern. GitHub Pages kann die Seite direkt aus dem Repository-Stamm ausliefern.
+In `_config.yml` steht das aktive Theme:
+
+```yaml
+theme: jekyll-theme-hacker
+```
+
+Der vollständige Gem-Name ist erforderlich: `hacker` allein ist kein gültiger Theme-Name. Weitere von GitHub Pages unterstützte Beispiele sind `jekyll-theme-cayman`, `jekyll-theme-midnight` und `jekyll-theme-minimal`. Ein Themewechsel verändert Seitenrahmen, Farben und Typografie. Die Karten bleiben als zusätzliche Komponente erhalten und passen ihre Spaltenzahl an die Inhaltsbreite des Themes an.
+
+Die Kartenfarben kannst du ebenfalls in `_config.yml` anpassen:
+
+```yaml
+project_style:
+  accent: "#b5e853"
+  card_background: "rgba(127, 127, 127, 0.06)"
+  card_border: "rgba(127, 127, 127, 0.28)"
+```
+
+GitHub-Anleitung: [Ein Theme zu einer Jekyll-Website hinzufügen](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll).
 
 ## Inhalte pflegen
 
-- Projekttexte, Repository-Links und Tags: `index.html`
-- Layout, Farben und responsive Ansichten: `assets/styles.css`
-- Symbolische Projektillustrationen (keine App-Screenshots): `assets/images/`
+- Namen, Links, Beschreibungen, Bilder, Tags und Gruppierung: `_data/projects.yml`
+- Seiteninhalt und Schleife über die Gruppen: `index.html`
+- Vorlage für eine einzelne Kachel: `_includes/project-card.html`
+- Ergänzende Styles: `assets/styles.css` (auf `.projects-page` begrenzt)
+- Einbindung der Styles, Kartenfarben und Skript: `_includes/head-custom.html`
+- Vorschaubilder: `assets/images/`
 - URL-Auswahl: `assets/projects.js`
 
-Die Datei `.nojekyll` im Repository-Stamm lässt GitHub Pages die statische Website direkt ausliefern. `_config.yml` bleibt als vorhandene Konfiguration erhalten, wird dabei aber nicht verarbeitet. Die eigenständige `index.html` verwendet kein Jekyll-Layout.
+Jekyll verarbeitet die Front Matter von `index.html` und erzeugt daraus die fertige Startseite mit dem `default`-Layout des gewählten Themes. Eine eigene Kopie dieses Theme-Layouts ist nicht erforderlich. `.nojekyll` darf nicht vorhanden sein, damit der Build ausgeführt wird. `README.md` ist von der Website-Ausgabe ausgeschlossen.
+
+## Lokal ansehen
+
+Voraussetzungen: Ruby und Bundler. Im Repository-Verzeichnis:
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+Die Vorschau steht dann unter `http://127.0.0.1:4000/`. Nach Änderungen an `_config.yml` den Server neu starten. Die Quelldatei `index.html` direkt im Browser zu öffnen rendert die Jekyll-Vorlagen nicht.
+
+Auf GitHub Pages wird die Seite weiterhin aus `main` und dem Repository-Stamm gebaut. Eine zusätzliche eigene GitHub-Actions-Datei ist für diese Konfiguration nicht erforderlich.
 
 ## Eine Kachel verlinken
 

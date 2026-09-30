@@ -1,0 +1,23 @@
+{% assign project = include.project %}
+<article class="project-card{% if include.compact %} demo-card{% endif %}" id="{{ project.id | escape }}" data-project="{{ project.name | escape }}">
+  <a class="project-link" href="{{ project.url | escape }}">
+    <div class="project-image">
+      <img src="{{ project.image | relative_url }}" alt="" width="800" height="460"{% if include.compact %} loading="lazy"{% elsif include.first %} fetchpriority="high"{% endif %}>
+      {% if project.image_label %}<span class="image-label">{{ project.image_label | escape }}</span>{% endif %}
+      <span class="selection-label">Ausgewählt</span>
+    </div>
+    <div class="card-body">
+      <div class="card-title">
+        <h3>{{ project.name | escape }}</h3>
+        <span class="repo-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+      </div>
+      <p>{{ project.description | escape }}</p>
+    </div>
+  </a>
+  <div class="card-meta">
+    <ul class="tags" aria-label="Technologien und Themen">
+      {% for tag in project.tags %}<li>{{ tag | escape }}</li>{% endfor %}
+    </ul>
+    <a class="permalink" href="#{{ project.id | escape }}" aria-label="Direktlink zur Kachel {{ project.name | escape }}" title="Direktlink zur Kachel"><svg class="icon" aria-hidden="true"><use href="#icon-link"/></svg></a>
+  </div>
+</article>
