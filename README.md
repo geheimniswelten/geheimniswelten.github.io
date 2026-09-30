@@ -13,7 +13,7 @@ Persönliche Projektübersicht mit drei großen Projektkarten und drei kompakter
 - Symbolische Projektillustrationen (keine App-Screenshots): `assets/images/`
 - URL-Auswahl: `assets/projects.js`
 
-Die vorhandene `_config.yml` bleibt erhalten; die eigenständige `index.html` verwendet kein Jekyll-Layout.
+Die Datei `.nojekyll` im Repository-Stamm lässt GitHub Pages die statische Website direkt ausliefern. `_config.yml` bleibt als vorhandene Konfiguration erhalten, wird dabei aber nicht verarbeitet. Die eigenständige `index.html` verwendet kein Jekyll-Layout.
 
 ## Eine Kachel verlinken
 
