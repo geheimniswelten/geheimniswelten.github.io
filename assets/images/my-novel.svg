@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">myNovel: Geschichten, Bücher und Manga schreiben</title>
+  <desc id="desc">Ein Schreibeditor mit Kapitelstruktur trifft auf ein aufgeschlagenes Buch mit Textzeilen und Manga-Panels.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#c4a19a" stop-opacity=".17"/><stop offset="1" stop-color="#c4a19a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="86" y1="100" x2="500" y2="363" gradientUnits="userSpaceOnUse"><stop stop-color="#352c30"/><stop offset="1" stop-color="#231e24"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#efd0bd" stroke-opacity=".045"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dy="16" stdDeviation="18" flood-color="#0e080b" flood-opacity=".5"/></filter>
+  </defs>
+  <path fill="#1a171c" d="M0 0h800v460H0z"/><path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <ellipse cx="420" cy="228" rx="375" ry="225" fill="url(#glow)"/>
+  <path d="M49 138V100a15 15 0 0 1 15-15h40m592 290h40a15 15 0 0 0 15-15v-38" stroke="#bc959e" stroke-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="87" y="99" width="415" height="263" rx="13" fill="url(#panel)" stroke="#81616b"/>
+    <path d="M88 140h413" stroke="#654d57"/>
+    <path d="M107 113h15v16h-15zm4 4h7m-7 4h7" stroke="#d2aaa8" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="137" y="126" fill="#e6cccb" font-family="ui-monospace, monospace" font-size="14" letter-spacing="1.5">MANUSCRIPT</text>
+    <path d="M445 119h36m-28-5v10m19-7v10" stroke="#aa828c" stroke-width="1.4" stroke-linecap="round"/>
+    <rect x="103" y="156" width="104" height="189" rx="6" fill="#231e25" stroke="#59434f"/>
+    <text x="115" y="177" fill="#ac8b97" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1">CHAPTERS</text>
+    <path d="M117 197h9m8 0h55m-72 29h9m8 0h39m-56 29h9m8 0h49m-66 29h9m8 0h45m-62 29h9m8 0h31" stroke="#9a7484" stroke-width="3" stroke-linecap="round"/>
+    <rect x="111" y="213" width="88" height="26" rx="4" fill="#c4a19a" fill-opacity=".15"/>
+    <rect x="223" y="156" width="263" height="189" rx="6" fill="#2b242a" stroke="#775765"/>
+    <text x="242" y="185" fill="#e6c5ba" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1">CHAPTER 01</text>
+    <path d="M243 206h220m-220 17h197m-197 17h220m-220 17h155m-155 29h220m-220 17h193m-193 17h112" stroke="#9d7e86" stroke-width="3" stroke-linecap="round"/>
+    <path d="M365 313v14" stroke="#efd0bd" stroke-width="2"/>
+    <path d="M542 145q47-14 86 5 41-19 87-5v207q-43-14-87 3-42-17-86-3z" fill="#33292f" stroke="#c2a09e" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M628 150v205" stroke="#a88491"/>
+    <path d="M553 359q41-8 75 4 36-12 75-4" stroke="#7e616e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M557 174h52m-52 16h52m-52 16h41m-41 29h52m-52 16h48m-48 16h52m-52 16h34m-34 29h52m-52 16h39" stroke="#be979d" stroke-width="3" stroke-linecap="round"/>
+    <rect x="643" y="170" width="57" height="72" rx="3" fill="#221d26" stroke="#a98299"/>
+    <path d="m646 227 14-13 11 5 15-19 11 28" stroke="#8d6c87" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="658" cy="186" r="6" fill="#d3b2ae" fill-opacity=".35"/>
+    <rect x="643" y="253" width="57" height="77" rx="3" fill="#221d26" stroke="#a98299"/>
+    <path d="M655 276a16 16 0 0 1 31 0v14a16 16 0 0 1-31 0z" fill="#5b4359" stroke="#b58d9e"/>
+    <path d="m655 278 5-13 9 7 8-7 9 13m-24 11h4m9 0h4m-11 11h7m-24 20q19-18 37 0" stroke="#d1abb4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

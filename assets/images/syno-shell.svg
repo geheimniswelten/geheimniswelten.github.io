@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">SynoShell: Terminal für Synology</title>
+  <desc id="desc">Ein Terminalfenster mit Eingabeaufforderung ist mit einem symbolischen NAS in sanften violetten Akzenten verbunden.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#aca0d4" stop-opacity=".16"/><stop offset="1" stop-color="#aca0d4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="85" y1="109" x2="530" y2="351" gradientUnits="userSpaceOnUse"><stop stop-color="#302b40"/><stop offset="1" stop-color="#1c1929"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#d1c2f0" stroke-opacity=".045"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dy="16" stdDeviation="18" flood-color="#090512" flood-opacity=".5"/></filter>
+  </defs>
+  <path fill="#17151f" d="M0 0h800v460H0z"/><path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <ellipse cx="403" cy="230" rx="375" ry="225" fill="url(#glow)"/>
+  <path d="M49 138V100a15 15 0 0 1 15-15h40m592 290h40a15 15 0 0 0 15-15v-38" stroke="#a796c7" stroke-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="86" y="107" width="443" height="248" rx="13" fill="url(#panel)" stroke="#78658f"/>
+    <path d="M87 151h441" stroke="#584968"/>
+    <path d="m105 124 7 6-7 6m17 0h11" stroke="#d1c2f0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="150" y="135" fill="#dbd0ed" font-family="ui-monospace, monospace" font-size="14" letter-spacing="1.6">SYNO / SHELL</text>
+    <circle cx="499" cy="129" r="4" fill="#b8cbb0"/>
+    <text x="111" y="187" fill="#bcacd8" font-family="ui-monospace, monospace" font-size="15">synology:~</text>
+    <path d="m111 211 6 5-6 5" stroke="#d1c2f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M136 216h116m13 0h73" stroke="#b4a0d3" stroke-width="4" stroke-linecap="round"/>
+    <path d="M137 241h315m-315 16h262m-262 16h284" stroke="#736187" stroke-width="3" stroke-linecap="round"/>
+    <path d="m111 300 6 5-6 5" stroke="#d1c2f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M136 305h75m12 0h58" stroke="#b4a0d3" stroke-width="4" stroke-linecap="round"/>
+    <path d="M292 298v14" stroke="#e3d8f3" stroke-width="5"/>
+    <path d="M112 334h213m151 0h29" stroke="#574660" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <path d="M530 231h43" stroke="#c9b7eb" stroke-width="2.5" stroke-dasharray="5 6"/>
+  <circle cx="552" cy="231" r="4" fill="#d1c2f0"/>
+  <g filter="url(#shadow)">
+    <rect x="577" y="147" width="140" height="202" rx="13" fill="#282338" stroke="#9b87b8"/>
+    <path d="M578 189h138" stroke="#6e5b82"/>
+    <text x="596" y="175" fill="#d6c7e7" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2">NAS</text>
+    <circle cx="695" cy="168" r="4" fill="#b8cbb0"/>
+    <rect x="593" y="205" width="46" height="105" rx="6" fill="#1b1729" stroke="#746186"/>
+    <rect x="655" y="205" width="46" height="105" rx="6" fill="#1b1729" stroke="#746186"/>
+    <path d="M602 218h28m34 0h28m-80 18h8v52h-8zm62 0h8v52h-8z" stroke="#a794bd" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="616" cy="298" r="2.5" fill="#b8cbb0"/><circle cx="678" cy="298" r="2.5" fill="#b8cbb0"/>
+    <path d="M595 328h75m12 0h17" stroke="#756087" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

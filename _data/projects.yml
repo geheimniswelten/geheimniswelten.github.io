@@ -3,6 +3,13 @@
   eyebrow: 01 / AUSGEWÄHLTE REPOS
   caption: Von der Idee zum Werkzeug.
   items:
+    - id: dai
+      name: DAI (delphi-mcp)
+      url: https://github.com/geheimniswelten/DAI
+      image: /assets/images/dai.svg
+      image_label: DELPHI × MCP
+      description: MCP-Server für die Delphi-IDE. Verbindet KI-Clients mit Quelltexten, Projekten, Formdesigner, Builds und Debugger.
+      tags: [Delphi, MCP]
     - id: firefox-codex-mcp
       name: firefox-codex-mcp
       url: https://github.com/geheimniswelten/firefox-codex-mcp
@@ -10,13 +17,6 @@
       image_label: BROWSER × MCP
       description: Verbindet Firefox mit Codex und anderen MCP-Clients. Tabs, Fenster und Seiteninhalte direkt aus dem KI-Workflow nutzen.
       tags: [JavaScript, MCP]
-    - id: h5ugrid
-      name: h5uGrid
-      url: https://github.com/geheimniswelten/h5uGrid
-      image: /assets/images/h5ugrid.svg
-      image_label: GRID × TREE
-      description: Grid und Tree für Delphi und Lazarus. Ein erweiterbarer Prototyp mit gemeinsamem Datenkern für VCL, FMX und LCL.
-      tags: [Delphi / Lazarus, VCL / FMX / LCL]
     - id: openaiusagedashboard
       name: OpenAIUsageDashboard
       url: https://github.com/geheimniswelten/OpenAIUsageDashboard
@@ -24,6 +24,41 @@
       image_label: USAGE × INSIGHTS
       description: OpenAI-API-Kosten, Tokenverbrauch und Codex-Limits im Blick. Ein natives Dashboard für Windows und Android.
       tags: [Codex, Dashboard]
+    - id: hiigrid
+      name: hiiGrid
+      url: https://github.com/geheimniswelten/hiiGrid
+      image: /assets/images/hiigrid.svg
+      image_label: GRID × TREE
+      description: Grid und Tree für Delphi und Lazarus. Ein erweiterbarer Prototyp mit gemeinsamem Datenkern für VCL, FMX und LCL.
+      tags: [Delphi / Lazarus, VCL / FMX / LCL]
+    - id: hiidesk
+      name: hiiDesk
+      url: https://github.com/geheimniswelten/hiiDesk
+      image: /assets/images/hii-desk.svg
+      image_label: DESKTOP × REMOTE
+      description: Geplante Remote-Desktop-Anwendung zum Verbinden und Fernsteuern anderer Rechner, ähnlich AnyDesk oder TeamViewer.
+      tags: [Remote Desktop, Fernzugriff]
+    - id: mynovel
+      name: myNovel
+      url: https://github.com/geheimniswelten/myNovel
+      image: /assets/images/my-novel.svg
+      image_label: IDEEN × GESCHICHTEN
+      description: Schreibprogramm in Entwicklung für Bücher, Manga, Novels, Light Novels und Anime-Drehbücher.
+      tags: [Delphi / FireMonkey, Schreiben]
+    - id: synowake
+      name: SynoWake
+      url: https://github.com/geheimniswelten/SynoWake
+      image: /assets/images/syno-wake.svg
+      image_label: NAS × WAKE-ON-LAN
+      description: Geräte im Netzwerk per Wake-on-LAN starten. Synology-DSM-App mit Gerätekacheln, Netzwerksuche und Zeitplänen.
+      tags: [Synology DSM, Wake-on-LAN]
+    - id: synoshell
+      name: SynoShell
+      url: https://github.com/geheimniswelten/SynoShell
+      image: /assets/images/syno-shell.svg
+      image_label: NAS × TERMINAL
+      description: Terminal für Synology DSM mit lokalen Shells, Docker-Konsolen und SSH-Verbindungen zu weiteren Geräten.
+      tags: [Synology DSM, Terminal / SSH]
 - id: demos
   title: Demos & kleine Helfer
   eyebrow: 02 / KLEIN, ABER NÜTZLICH
@@ -48,3 +83,15 @@
       image: /assets/images/docking-demos.svg
       description: "Docking und MDI in Delphi: Beispiele mit VCL-Bordmitteln, DevExpress und Walibeiro."
       tags: [Delphi, Docking]
+    - id: delphiencryptioncompendium
+      name: DelphiEncryptionCompendium
+      url: https://github.com/MHumm/DelphiEncryptionCompendium
+      image: /assets/images/delphi-encryption-compendium.svg
+      description: Kryptografie-Bibliothek für Delphi mit Verschlüsselung, Hashes und weiteren Bausteinen. Hier geht’s zum Projekt von MHumm.
+      tags: [Delphi, Kryptografie]
+    - id: decmath-legacy
+      name: DECMath-Legacy
+      url: https://github.com/geheimniswelten/DECMath-Legacy
+      image: /assets/images/decmath-legacy.svg
+      description: Archiv des Delphi Encryption Compendium 5.2 mit Part I und dem historischen DECMath (Part II) für ältere Delphi-Versionen.
+      tags: [Delphi, Legacy / DECMath]

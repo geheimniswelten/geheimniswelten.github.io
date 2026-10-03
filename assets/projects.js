@@ -1,6 +1,7 @@
 // Project fragments take precedence over ?project=; section fragments clear the selection.
 const cards = [...document.querySelectorAll("[data-project]")];
 const selectionStatus = document.getElementById("selection-status");
+const projectAliases = { h5ugrid: "hiigrid" };
 
 function updateProjectHighlight() {
   const url = new URL(window.location.href);
@@ -14,7 +15,8 @@ function updateProjectHighlight() {
     }
   }
 
-  const selected = cards.find((card) => card.id === project.trim().toLowerCase());
+  const projectId = project.trim().toLowerCase();
+  const selected = cards.find((card) => card.id === (projectAliases[projectId] || projectId));
   for (const card of cards) {
     card.classList.toggle("is-highlighted", card === selected);
   }

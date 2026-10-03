@@ -1,6 +1,6 @@
 # geheimniswelten.github.io
 
-Jekyll-Projektübersicht für GitHub Pages mit drei großen Projektkarten und drei kompakteren Demo-Karten. Das konfigurierte Theme liefert Seitenrahmen und Typografie; die Projektkarten ergänzen das Theme. Die sechs Vorschaubilder sind symbolische Illustrationen, keine App-Screenshots.
+Jekyll-Projektübersicht für GitHub Pages mit acht großen Projektkarten und fünf kompakteren Demo-Karten. Auf dem Desktop stehen jeweils drei Karten nebeneinander; auf kleineren Bildschirmen zwei oder eine. Das konfigurierte Theme liefert Seitenrahmen und Typografie; die Projektkarten ergänzen das Theme. Die Vorschaubilder sind symbolische Illustrationen, keine App-Screenshots.
 
 ## Theme und Farben
 
@@ -52,12 +52,14 @@ Auf GitHub Pages wird die Seite weiterhin aus `main` und dem Repository-Stamm ge
 
 Das Link-Symbol unten rechts an jeder Kachel setzt den Direktlink in der Adresszeile. Ein Fragment springt zur Kachel und hebt sie hervor:
 
-`https://geheimniswelten.github.io/#h5ugrid`
+`https://geheimniswelten.github.io/#hiigrid`
 
 Alternativ hebt ein Query-Parameter die Kachel hervor, ohne die Seite zu verschieben:
 
-`https://geheimniswelten.github.io/?project=h5ugrid`
+`https://geheimniswelten.github.io/?project=hiigrid`
 
-Verfügbare IDs: `firefox-codex-mcp`, `h5ugrid`, `openaiusagedashboard`, `fmxstyleoverview`, `ospathsdemo`, `dockingdemos`.
+Verfügbare IDs: `dai`, `firefox-codex-mcp`, `openaiusagedashboard`, `hiigrid`, `hiidesk`, `mynovel`, `synowake`, `synoshell`, `fmxstyleoverview`, `ospathsdemo`, `dockingdemos`, `delphiencryptioncompendium`, `decmath-legacy`.
+
+Mit JavaScript bleiben die früheren Links auf `h5ugrid` als Alias für `hiigrid` gültig. Die Repository-Links sind auch für noch nicht veröffentlichte Projekte bereits eingetragen. DelphiEncryptionCompendium verweist auf das Projekt von MHumm.
 
 Mit JavaScript sind die IDs unabhängig von Groß-/Kleinschreibung. Ein Fragment hat Vorrang vor dem Query-Parameter; die Abschnittslinks `#projekte` und `#demos` heben die Auswahl auf. Unbekannte IDs werden ignoriert. Ohne JavaScript funktionieren die kleingeschriebenen Fragment-Links weiterhin über CSS `:target`.

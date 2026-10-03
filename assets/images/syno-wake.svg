@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">SynoWake: Geräte per Wake-on-LAN aufwecken</title>
+  <desc id="desc">Ein symbolisches NAS und ein Netzwerkpaket verbinden sich mit einem leuchtenden Einschaltsymbol auf dunklem Raster.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#82c4b1" stop-opacity=".16"/><stop offset="1" stop-color="#82c4b1" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="142" y1="104" x2="396" y2="362" gradientUnits="userSpaceOnUse"><stop stop-color="#293a35"/><stop offset="1" stop-color="#192a24"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#b5e6d4" stroke-opacity=".045"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dy="16" stdDeviation="18" flood-color="#030c08" flood-opacity=".5"/></filter>
+  </defs>
+  <path fill="#131c19" d="M0 0h800v460H0z"/><path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <ellipse cx="418" cy="229" rx="375" ry="225" fill="url(#glow)"/>
+  <path d="M49 138V100a15 15 0 0 1 15-15h40m592 290h40a15 15 0 0 0 15-15v-38" stroke="#8bbba8" stroke-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="143" y="104" width="252" height="250" rx="16" fill="url(#panel)" stroke="#608b7a"/>
+    <path d="M144 151h250" stroke="#496e5d"/>
+    <text x="165" y="134" fill="#c5e0d6" font-family="ui-monospace, monospace" font-size="14" letter-spacing="2">NAS</text>
+    <circle cx="366" cy="128" r="5" fill="#b5e6d4"/>
+    <rect x="162" y="169" width="63" height="137" rx="7" fill="#14231c" stroke="#5c8873"/>
+    <rect x="237" y="169" width="63" height="137" rx="7" fill="#14231c" stroke="#5c8873"/>
+    <rect x="312" y="169" width="63" height="137" rx="7" fill="#14231c" stroke="#5c8873"/>
+    <path d="M172 183h43m-43 9h43m32-9h43m-43 9h43m32-9h43m-43 9h43" stroke="#3e6652" stroke-width="2" stroke-linecap="round"/>
+    <path d="M188 218h12v58h-12zm75 0h12v58h-12zm75 0h12v58h-12z" fill="#293f33" stroke="#80ab96"/>
+    <circle cx="194" cy="293" r="3" fill="#b5e6d4"/><circle cx="269" cy="293" r="3" fill="#b5e6d4"/><circle cx="344" cy="293" r="3" fill="#b5e6d4"/>
+    <path d="M165 328h132m12 0h38" stroke="#4e7562" stroke-width="4" stroke-linecap="round"/>
+    <path d="M164 355v9m209-9v9" stroke="#638572" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <path d="M399 235h34m72 0h31" stroke="#9bd6bd" stroke-width="2.5" stroke-dasharray="5 6"/>
+  <rect x="441" y="215" width="55" height="40" rx="7" fill="#263c31" stroke="#9bd6bd"/>
+  <path d="m444 219 24 16 25-16m-49 33 17-12m32 12-17-12" stroke="#9bd6bd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#shadow)">
+    <circle cx="619" cy="233" r="81" fill="#1d322a" stroke="#638e7b"/>
+    <circle cx="619" cy="233" r="64" stroke="#9bd6bd" stroke-opacity=".25" stroke-dasharray="3 7"/>
+    <path d="M601 203a35 35 0 1 0 36 0" stroke="#b5e6d4" stroke-width="5" stroke-linecap="round"/>
+    <path d="M619 191v43" stroke="#b5e6d4" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="619" y="347" text-anchor="middle" fill="#b1d2c3" font-family="ui-monospace, monospace" font-size="12" letter-spacing="2">WAKE ON LAN</text>
+</svg>
