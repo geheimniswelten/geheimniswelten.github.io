@@ -1,6 +1,6 @@
 - id: projekte
   title: Die größeren Projekte
-  eyebrow: 01 / AUSGEWÄHLTE REPOS
+  eyebrow: AUSGEWÄHLTE REPOS
   caption: Von der Idee zum Werkzeug.
   items:
     - id: dai
@@ -61,7 +61,7 @@
       tags: [Synology DSM, Terminal / SSH]
 - id: demos
   title: Demos & kleine Helfer
-  eyebrow: 02 / KLEIN, ABER NÜTZLICH
+  eyebrow: KLEIN, ABER NÜTZLICH
   caption: Ausprobieren. Nachschauen. Weiterbauen.
   compact: true
   items:

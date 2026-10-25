@@ -7,27 +7,26 @@ project_overview: true
   <a class="skip-link" href="#projekte">Zu den Projekten</a>
   {% include project-icons.html %}
 
-  <div class="portfolio-topbar">
-    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CODE. NEUGIER. KAFFEE.</p>
-    <nav class="portfolio-nav" aria-label="Projektnavigation">
-      {% for group in site.data.projects %}<a href="#{{ group.id | escape }}">{% if group.compact %}Demos{% else %}Projekte{% endif %}</a>{% endfor %}
-      <a class="github-nav" href="https://github.com/geheimniswelten" aria-label="GitHub-Profil von geheimniswelten"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>GitHub<svg class="icon small" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-    </nav>
-  </div>
-
   <section class="intro" aria-labelledby="intro-title">
     <h1 id="intro-title">Kleine Ideen.<br>Eigene <span>Welten.</span></h1>
+    <div class="portfolio-topbar">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CODE. NEUGIER. KAFFEE.</p>
+      <nav class="portfolio-nav" aria-label="Projektnavigation">
+        {% for group in site.data.projects %}<a href="#{{ group.id | escape }}">{% if group.compact %}Demos{% else %}Projekte{% endif %}</a>{% endfor %}
+        <a class="github-nav" href="https://github.com/geheimniswelten" aria-label="GitHub-Profil von geheimniswelten"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>GitHub<svg class="icon small" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </nav>
+    </div>
     <p class="intro-description">Meine Projekte, nützliche Helfer und kleine Experimente.<br>Gebaut aus Neugier. Geteilt zum Entdecken und Weiterdenken.</p>
   </section>
 
   {% for group in site.data.projects %}
     <section class="project-group" id="{{ group.id | escape }}" aria-labelledby="{{ group.id | escape }}-title">
       <div class="section-heading">
-        <div>
+        <h2 id="{{ group.id | escape }}-title">{{ group.title | escape }}<span class="count">{% if group.items.size < 10 %}0{% endif %}{{ group.items.size }}</span></h2>
+        <div class="section-summary">
           <p class="section-index">{{ group.eyebrow | escape }}</p>
-          <h2 id="{{ group.id | escape }}-title">{{ group.title | escape }}<span class="count">{% if group.items.size < 10 %}0{% endif %}{{ group.items.size }}</span></h2>
+          <span class="section-caption">{{ group.caption | escape }}</span>
         </div>
-        <span class="section-caption">{{ group.caption | escape }}</span>
       </div>
       <div class="project-grid">
         {% for project in group.items %}
