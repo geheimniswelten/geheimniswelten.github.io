@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">SynoReplica: Quellen auf das NAS spiegeln</title>
+  <desc id="desc">Symbolische FTP- und Git-Quellen übertragen lokale Kopien in Pfeilrichtung auf ein NAS.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#e6b477" stop-opacity=".16"/><stop offset="1" stop-color="#e6b477" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="485" y1="111" x2="706" y2="358" gradientUnits="userSpaceOnUse"><stop stop-color="#44372d"/><stop offset="1" stop-color="#2a2421"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#f1d2a9" stroke-opacity=".045"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dy="16" stdDeviation="18" flood-color="#120b06" flood-opacity=".5"/></filter>
+  </defs>
+  <path fill="#201a18" d="M0 0h800v460H0z"/><path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <ellipse cx="410" cy="230" rx="375" ry="225" fill="url(#glow)"/>
+  <path d="M49 138V100a15 15 0 0 1 15-15h40m592 290h40a15 15 0 0 0 15-15v-38" stroke="#c7a080" stroke-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="91" y="101" width="208" height="105" rx="12" fill="#352c27" stroke="#997760"/>
+    <path d="M92 140h206" stroke="#715747"/>
+    <text x="112" y="128" fill="#f0d5b6" font-family="ui-monospace, monospace" font-size="14" letter-spacing="2">FTP</text>
+    <circle cx="276" cy="121" r="4" fill="#e7bb83"/>
+    <path d="M113 161h44l8 8h41v20h-93z" fill="#44352a" stroke="#c99c70" stroke-linejoin="round"/>
+    <path d="M222 163h51m-51 12h37m-37 12h45" stroke="#95765b" stroke-width="3" stroke-linecap="round"/>
+    <rect x="91" y="254" width="208" height="105" rx="12" fill="#352c27" stroke="#997760"/>
+    <path d="M92 293h206" stroke="#715747"/>
+    <text x="112" y="281" fill="#f0d5b6" font-family="ui-monospace, monospace" font-size="14" letter-spacing="2">GIT</text>
+    <circle cx="276" cy="274" r="4" fill="#e7bb83"/>
+    <path d="M125 318v21m0-11h14a9 9 0 0 0 9-9" stroke="#d9b089" stroke-width="2"/><circle cx="125" cy="316" r="4" fill="#e7bb83"/><circle cx="125" cy="342" r="4" fill="#e7bb83"/><circle cx="148" cy="316" r="4" fill="#e7bb83"/>
+    <path d="M174 318h97m-97 12h76m-76 12h91" stroke="#95765b" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <path d="M300 153h55a20 20 0 0 1 20 20v38m-75 96h55a20 20 0 0 0 20-20v-38" stroke="#cba47f" stroke-width="2" stroke-dasharray="5 6"/>
+  <circle cx="375" cy="230" r="20" fill="#403025" stroke="#cda477"/>
+  <path d="M367 230h16m-6-6 6 6-6 6" stroke="#f0c58f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M395 230h72m-10-8 10 8-10 8" stroke="#e7bb83" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#shadow)">
+    <rect x="481" y="111" width="225" height="247" rx="15" fill="url(#panel)" stroke="#a58167"/>
+    <path d="M482 157h223" stroke="#765b49"/>
+    <text x="503" y="140" fill="#f1d9bd" font-family="ui-monospace, monospace" font-size="14" letter-spacing="2">NAS</text>
+    <circle cx="681" cy="135" r="5" fill="#e7c28e"/>
+    <rect x="499" y="176" width="80" height="135" rx="7" fill="#241e1b" stroke="#876b56"/><rect x="608" y="176" width="80" height="135" rx="7" fill="#241e1b" stroke="#876b56"/>
+    <path d="M510 190h58m51 0h58m-58 9h58m-167 0h58" stroke="#765a45" stroke-width="2" stroke-linecap="round"/>
+    <path d="M534 218h10v61h-10zm109 0h10v61h-10z" fill="#403229" stroke="#b38c69"/>
+    <circle cx="539" cy="296" r="3" fill="#e7c28e"/><circle cx="648" cy="296" r="3" fill="#e7c28e"/>
+    <path d="M502 335h121m13 0h48" stroke="#876c57" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

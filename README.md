@@ -1,6 +1,6 @@
 # geheimniswelten.github.io
 
-Jekyll-Projektübersicht für GitHub Pages mit acht großen Projektkarten und fünf kompakteren Demo-Karten. Auf dem Desktop stehen jeweils drei Karten nebeneinander; auf kleineren Bildschirmen zwei oder eine. Das konfigurierte Theme liefert Seitenrahmen und Typografie; die Projektkarten ergänzen das Theme. Die Vorschaubilder sind symbolische Illustrationen, keine App-Screenshots.
+Jekyll-Projektübersicht für GitHub Pages mit sechs großen Projektkarten, vier Synology-Apps und fünf kompakteren Demo-Karten. Die Synology-Gruppe steht an zweiter Stelle und enthält SynoWake, SynoUsage, SynoReplica und SynoShell in dieser Reihenfolge. Auf dem Desktop stehen jeweils drei Karten nebeneinander; auf kleineren Bildschirmen zwei oder eine. Das konfigurierte Theme liefert Seitenrahmen und Typografie; die Projektkarten ergänzen das Theme. Die Vorschaubilder sind symbolische Illustrationen, keine App-Screenshots.
 
 ## Theme und Farben
 
@@ -25,7 +25,7 @@ GitHub-Anleitung: [Ein Theme zu einer Jekyll-Website hinzufügen](https://docs.g
 
 ## Inhalte pflegen
 
-- Namen, Links, Beschreibungen, Bilder, Tags und Gruppierung: `_data/projects.yml`
+- Namen, Links, Beschreibungen, Bilder, Tags und Gruppierung: `_data/projects.yml` (Gruppenreihenfolge wie in der Datei, Navigationsname über `nav_title`)
 - Seiteninhalt und Schleife über die Gruppen: `index.html`
 - Vorlage für eine einzelne Kachel: `_includes/project-card.html`
 - Ergänzende Styles: `assets/styles.css` (auf `.projects-page` begrenzt)
@@ -58,8 +58,8 @@ Alternativ hebt ein Query-Parameter die Kachel hervor, ohne die Seite zu verschi
 
 `https://geheimniswelten.github.io/?project=hiigrid`
 
-Verfügbare IDs: `dai`, `firefox-codex-mcp`, `openaiusagedashboard`, `hiigrid`, `hiidesk`, `mynovel`, `synowake`, `synoshell`, `fmxstyleoverview`, `ospathsdemo`, `dockingdemos`, `delphiencryptioncompendium`, `decmath-legacy`.
+Verfügbare IDs: `dai`, `firefox-codex-mcp`, `openaiusagedashboard`, `hiigrid`, `hiidesk`, `mynovel`, `synowake`, `synousage`, `synoreplica`, `synoshell`, `fmxstyleoverview`, `ospathsdemo`, `dockingdemos`, `delphiencryptioncompendium`, `decmath-legacy`.
 
 Mit JavaScript bleiben die früheren Links auf `h5ugrid` als Alias für `hiigrid` gültig. Die Repository-Links sind auch für noch nicht veröffentlichte Projekte bereits eingetragen. DelphiEncryptionCompendium verweist auf das Projekt von MHumm.
 
-Mit JavaScript sind die IDs unabhängig von Groß-/Kleinschreibung. Ein Fragment hat Vorrang vor dem Query-Parameter; die Abschnittslinks `#projekte` und `#demos` heben die Auswahl auf. Unbekannte IDs werden ignoriert. Ohne JavaScript funktionieren die kleingeschriebenen Fragment-Links weiterhin über CSS `:target`.
+Mit JavaScript sind die IDs unabhängig von Groß-/Kleinschreibung. Ein Fragment hat Vorrang vor dem Query-Parameter; die Abschnittslinks `#projekte`, `#synology` und `#demos` heben die Auswahl auf. Unbekannte IDs werden ignoriert. Ohne JavaScript funktionieren die kleingeschriebenen Fragment-Links weiterhin über CSS `:target`.

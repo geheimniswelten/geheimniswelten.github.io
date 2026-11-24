@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">SynoUsage: Speicheranalyse für Synology</title>
+  <desc id="desc">Ein symbolisches NAS ist mit einer Anzeige für Volume-Belegung und zeitlichen Verlauf verbunden. Die Darstellung zeigt keine Messwerte.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#62c9d2" stop-opacity=".17"/><stop offset="1" stop-color="#62c9d2" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="265" y1="92" x2="706" y2="366" gradientUnits="userSpaceOnUse"><stop stop-color="#243b46"/><stop offset="1" stop-color="#142832"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#b4e9ee" stroke-opacity=".045"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dy="16" stdDeviation="18" flood-color="#031016" flood-opacity=".5"/></filter>
+  </defs>
+  <path fill="#121e24" d="M0 0h800v460H0z"/><path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <ellipse cx="410" cy="226" rx="375" ry="225" fill="url(#glow)"/>
+  <path d="M49 138V100a15 15 0 0 1 15-15h40m592 290h40a15 15 0 0 0 15-15v-38" stroke="#8dc6cc" stroke-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="73" y="147" width="166" height="202" rx="13" fill="#203741" stroke="#66939e"/>
+    <path d="M74 189h164" stroke="#496e78"/>
+    <text x="92" y="175" fill="#c6e5e8" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2">NAS</text>
+    <circle cx="217" cy="168" r="4" fill="#9ee4dc"/>
+    <rect x="90" y="205" width="57" height="105" rx="6" fill="#142830" stroke="#658e98"/><rect x="165" y="205" width="57" height="105" rx="6" fill="#142830" stroke="#658e98"/>
+    <path d="M100 218h37m38 0h37m-98 18h9v52h-9zm75 0h9v52h-9z" stroke="#85b6bf" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="118" cy="298" r="2.5" fill="#9ee4dc"/><circle cx="193" cy="298" r="2.5" fill="#9ee4dc"/>
+    <path d="M91 328h91m12 0h25" stroke="#608a94" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <path d="M240 231h39" stroke="#86d7dd" stroke-width="2.5" stroke-dasharray="5 6"/><circle cx="259" cy="231" r="4" fill="#a8e7e7"/>
+  <g filter="url(#shadow)">
+    <rect x="282" y="95" width="445" height="270" rx="14" fill="url(#panel)" stroke="#648f9c"/>
+    <path d="M283 140h443" stroke="#486d79"/>
+    <text x="305" y="124" fill="#d0ebed" font-family="ui-monospace, monospace" font-size="14" letter-spacing="2">VOLUME / USAGE</text>
+    <circle cx="701" cy="117" r="4" fill="#9ee4dc"/>
+    <circle cx="390" cy="229" r="56" stroke="#34545e" stroke-width="13"/>
+    <circle cx="390" cy="229" r="56" stroke="#77d7d9" stroke-width="13" stroke-linecap="round" stroke-dasharray="205 352" transform="rotate(-90 390 229)"/>
+    <circle cx="390" cy="229" r="35" fill="#1b323c" stroke="#4c7883"/>
+    <path d="M377 228h26m-26 10h19" stroke="#a8e4e5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M478 177h109m-109 15h166" stroke="#638d96" stroke-width="4" stroke-linecap="round"/>
+    <rect x="478" y="211" width="202" height="12" rx="6" fill="#294a55"/><path d="M484 217h106" stroke="#79d7d9" stroke-width="12" stroke-linecap="round"/><path d="M609 217h30" stroke="#5ca5c4" stroke-width="12" stroke-linecap="round"/>
+    <path d="M478 252h202m-202 26h202m-202 26h202" stroke="#799fa6" stroke-opacity=".18"/>
+    <path d="M478 301 507 292l28 4 30-20 29 6 28-19 29 5 29-16" stroke="#82d9de" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M306 337h116m12 0h38m185 0h42" stroke="#527984" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

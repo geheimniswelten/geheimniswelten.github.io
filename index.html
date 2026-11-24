@@ -12,7 +12,7 @@ project_overview: true
     <div class="portfolio-topbar">
       <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CODE. NEUGIER. KAFFEE.</p>
       <nav class="portfolio-nav" aria-label="Projektnavigation">
-        {% for group in site.data.projects %}<a href="#{{ group.id | escape }}">{% if group.compact %}Demos{% else %}Projekte{% endif %}</a>{% endfor %}
+        {% for group in site.data.projects %}<a href="#{{ group.id | escape }}">{{ group.nav_title | default: group.title | escape }}</a>{% endfor %}
         <a class="github-nav" href="https://github.com/geheimniswelten" aria-label="GitHub-Profil von geheimniswelten"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>GitHub<svg class="icon small" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
       </nav>
     </div>

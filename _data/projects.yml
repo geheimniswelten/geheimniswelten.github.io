@@ -1,5 +1,6 @@
 - id: projekte
   title: Die größeren Projekte
+  nav_title: Projekte
   eyebrow: AUSGEWÄHLTE REPOS
   caption: Von der Idee zum Werkzeug.
   items:
@@ -45,6 +46,12 @@
       image_label: IDEEN × GESCHICHTEN
       description: Schreibprogramm in Entwicklung für Bücher, Manga, Novels, Light Novels und Anime-Drehbücher.
       tags: [Delphi / FireMonkey, Schreiben]
+- id: synology
+  title: Synology-Apps
+  nav_title: Synology
+  eyebrow: WERKZEUGE FÜRS NAS
+  caption: Aufwecken. Analysieren. Sichern. Verbinden.
+  items:
     - id: synowake
       name: SynoWake
       url: https://github.com/geheimniswelten/SynoWake
@@ -52,6 +59,20 @@
       image_label: NAS × WAKE-ON-LAN
       description: Geräte im Netzwerk per Wake-on-LAN starten. Synology-DSM-App mit Gerätekacheln, Netzwerksuche und Zeitplänen.
       tags: [Synology DSM, Wake-on-LAN]
+    - id: synousage
+      name: SynoUsage
+      url: https://github.com/geheimniswelten/SynoUsage
+      image: /assets/images/syno-usage.svg
+      image_label: NAS × SPEICHERANALYSE
+      description: Speicherbelegung auf dem Synology-NAS analysieren. Volumes, Freigaben und Snapshots mit Messdetails und Verlauf im Blick.
+      tags: [Synology DSM, Speicheranalyse]
+    - id: synoreplica
+      name: SynoReplica
+      url: https://github.com/geheimniswelten/SynoReplica
+      image: /assets/images/syno-replica.svg
+      image_label: NAS × BACKUP
+      description: Daten von FTP/FTPS-Servern und Git-/GitHub-Repositories auf das Synology-NAS sichern. Lokale Kopien und Mirrors mit Zeitplänen aktuell halten.
+      tags: [Synology DSM, Backup / Git / FTP]
     - id: synoshell
       name: SynoShell
       url: https://github.com/geheimniswelten/SynoShell
@@ -61,6 +82,7 @@
       tags: [Synology DSM, Terminal / SSH]
 - id: demos
   title: Demos & kleine Helfer
+  nav_title: Demos
   eyebrow: KLEIN, ABER NÜTZLICH
   caption: Ausprobieren. Nachschauen. Weiterbauen.
   compact: true
